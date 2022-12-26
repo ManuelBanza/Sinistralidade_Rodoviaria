@@ -13,4 +13,4 @@ url = "data:application/pdf;base64,JVBERi0xLjcNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL
 urllib.request.urlretrieve(url, (datetime.now()+timedelta(hours=1)).strftime("../data_sources/data_raw/gnr_sinistralidade-%Y-%m-%d-%H-%M-%S.pdf"))
 
 # Get today date now to file name when export to csv or excel with encoding utf8
-df.to_csv((datetime.now()+timedelta(hours=1)).strftime('../data_sources/data_transformed/news_api-%Y-%m-%d-%H-%M-%S.csv'), encoding='utf8', index=False)
+df.to_csv((datetime.now()+timedelta(hours=1)).strftime('data_sources/data_transformed/news_api-%Y-%m-%d-%H-%M-%S.csv'), encoding='utf8', index=False)
